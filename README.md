@@ -16,7 +16,7 @@ This Python program takes an Nmap XML output and converts it into a formatted Wo
   ```bash
   pip install python-docx
   ```
-Or with apt
+  Or with apt
   ```bash
   apt install python3-docx
   ```
