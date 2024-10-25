@@ -15,7 +15,7 @@ This Python program takes an Nmap XML output and converts it into a formatted Wo
 - The `python-docx` library for generating Word documents. Install it via pip:
   ```bash
   pip install python-docx
-  
+  ```
   Or install using apt
   ```bash
   apt install python3-docx
