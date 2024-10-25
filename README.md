@@ -92,4 +92,4 @@ If you want to contribute or suggest improvements, feel free to fork the reposit
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
