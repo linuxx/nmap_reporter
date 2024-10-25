@@ -32,13 +32,13 @@ This Python program takes an Nmap XML output and converts it into a formatted Wo
 To generate the XML report needed for the script, use Nmap with the following command in Kali Linux:
 
 ```bash
-sudo nmap -sS -p- -sV --script vuln -iL ips.txt -T4 -oA my_report
+sudo nmap -sS -p- -sSUV --script vuln -iL ips.txt -T4 -oA my_report
 ```
 
 This command performs the following:
 - `-sS`: Conducts a TCP SYN scan.
 - `-p-`: Scans all 65535 ports.
-- `-sV`: Attempts to determine service versions.
+- `-sSUV`: Scans both TCP and UDP ports and attempts service version detection.
 - `--script vuln`: Runs vulnerability scripts on each open port to identify potential issues.
 - `-iL ips.txt`: Reads a list of IPs or hostnames from the file `ips.txt`.
 - `-T4`: Increases scan speed, adjusting timing to make it faster.
