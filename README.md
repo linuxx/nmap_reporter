@@ -2,6 +2,8 @@
 
 This Python program takes an Nmap XML output and converts it into a formatted Word document with detailed information about open ports, services, and potential vulnerabilities found during the scan. The Word document is generated in a table-based layout, making it easy to review and add additional notes.
 
+![preview image](https://github.com/linuxx/nmap_reporter/blob/main/image/ss1.jpg?raw=true)
+
 ## Features
 - Parses Nmap XML output.
 - Extracts and presents open ports, services, and product details.
