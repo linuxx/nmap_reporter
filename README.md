@@ -32,11 +32,10 @@ This Python program takes an Nmap XML output and converts it into a formatted Wo
 To generate the XML report needed for the script, use Nmap with the following command in Kali Linux:
 
 ```bash
-sudo nmap -sS -p- -sSUV --script vuln -iL ips.txt -T4 -oA my_report
+sudo nmap -p- -sSUV --script vuln -iL ips.txt -T4 -oA my_report
 ```
 
 This command performs the following:
-- `-sS`: Conducts a TCP SYN scan.
 - `-p-`: Scans all 65535 ports.
 - `-sSUV`: Scans both TCP and UDP ports and attempts service version detection.
 - `--script vuln`: Runs vulnerability scripts on each open port to identify potential issues.
@@ -72,7 +71,7 @@ This will create a `my_report.docx` file that contains a structured and formatte
 echo -e "192.168.1.1\n192.168.1.2" > ips.txt
 
 # Step 2: Run the Nmap scan
-sudo nmap -sS -p- -sV --script vuln -iL ips.txt -T4 -oA my_report
+sudo nmap -p- -sSUV --script vuln -iL ips.txt -T4 -oA my_report
 
 # Step 3: Convert Nmap XML output to a Word document
 python parsereport.py my_report.xml my_report.docx
